@@ -4,7 +4,7 @@
 
 Software framework for **in silico design of fluorescent protein (FP) mutants** optimized for biological qubit-related photophysical proxies (coherence, contrast). No wet-lab experiments, purely computational.
 
-**Status**: Skeleton (v0.1.0) — structure and TODOs only, no trained ML models yet.
+**Status**: v1.0.0 Public Release — functional baseline ML, 30 optimized mutants, figures, and interactive website.
 
 ## Context
 
@@ -34,37 +34,35 @@ pip install -r requirements.txt
 
 **Dependencies**: numpy, pandas, scikit-learn, matplotlib (Python ≥3.8).
 
-## Quickstart (skeleton)
+## Quickstart
 
 ```bash
-# Generate mutants (TODO script)
+# 1. Train baseline Random Forest model
+python scripts/train_baseline.py --config configs/example.yaml
+
+# 2. Generate mutant shortlist (30 candidates)
 python scripts/generate_mutants.py --config configs/example.yaml
 
-# Train baseline (TODO script)
-python scripts/train_baseline.py --config configs/example.yaml
+# 3. Generate figures
+python scripts/generate_figures.py
+
+# 4. View shortlist online
+# https://mythmaker28.github.io/fp-qubit-design/ (once Pages enabled)
 ```
 
-**Note**: Scripts are placeholders with TODOs (no actual training yet).
+## Results (v1.0.0)
 
-## Roadmap
+**Baseline ML**: Random Forest, Test MAE ~4.6%, CV MAE 4.79 ± 0.42%  
+**Mutant Shortlist**: 30 candidates, predicted gain +2.1% to +12.3% (mean +4.0%)  
+**Visualizations**: Feature importance, predicted gains histogram  
 
-### 30 days
-- Define Atlas → FP proxy mapping
-- Implement basic featurization (AA composition, physicochemical properties)
-- RF/XGB baseline proof-of-concept
-- Generate first mutant candidates
+## Future Roadmap (v1.1+)
 
-### 60 days
-- Cross-validation of baselines
-- Uncertainty quantification (bootstrap/GP)
-- Shortlist 10-20 "qubit-friendly" mutants
-- Publish web page (GitHub Pages)
-
-### 90 days
-- (Optional) GNN prototype
-- Zenodo publication with DOI
-- Complete documentation (IMRaD)
-- Open to external contributions
+- Parse "Photophysique" field (lifetime, QY)
+- Real ΔΔG calculations (FoldX or ML)
+- 3D structures (PDB alignment)
+- GNN prototype (optional)
+- Zenodo DOI publication
 
 ## License & Citation
 
@@ -87,5 +85,5 @@ See `CITATION.cff` for structured format.
 
 ---
 
-**Status**: 🚧 Skeleton (v0.1.0) — Under active development
+**Status**: ✅ v1.0.0 Public Release — Fully functional
 

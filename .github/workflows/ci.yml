@@ -40,6 +40,6 @@ jobs:
     
     - name: Check scripts run (dry-run)
       run: |
-        python scripts/train_baseline.py --config configs/example.yaml || echo "Script skeleton (expected)"
-        python scripts/generate_mutants.py --config configs/example.yaml || echo "Script skeleton (expected)"
+        python scripts/train_baseline.py --config configs/example.yaml --dry-run
+        python scripts/generate_mutants.py --config configs/example.yaml --dry-run
 

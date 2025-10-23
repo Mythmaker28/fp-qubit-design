@@ -166,7 +166,7 @@
             const container = document.getElementById('table-container');
             
             try {
-                // Cache-bust to ensure fresh data
+                // Cache-bust to ensure fresh data (loads from site/shortlist.csv, copied from outputs/ during build)
                 const response = await fetch('shortlist.csv?v=' + Date.now());
                 
                 if (!response.ok) {

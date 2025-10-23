@@ -1,6 +1,7 @@
 numpy
 pandas
-scikit-learn
+scikit-learn>=1.0.0
 matplotlib
 pyyaml
+joblib
 
