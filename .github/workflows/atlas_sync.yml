@@ -1,0 +1,55 @@
+name: Atlas Sync & Audit
+
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sunday at midnight UTC
+
+jobs:
+  atlas-sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+      
+      - name: Fetch all Atlas releases
+        run: python scripts/etl/fetch_atlas_releases.py
+      
+      - name: Fetch extended Atlas sources (branches)
+        run: python scripts/etl/fetch_atlas_sources_extended.py
+      
+      - name: Merge Atlas assets
+        run: python scripts/etl/merge_atlas_assets.py
+      
+      - name: Build training table
+        run: python scripts/etl/build_training_table.py
+      
+      - name: Audit real counts (fails if N<34)
+        run: python scripts/audit_atlas_real_counts.py
+      
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: atlas-sync-reports
+          path: |
+            data/interim/atlas_merged.csv
+            data/processed/training_table.csv
+            data/processed/TRAINING.METADATA.json
+            reports/ATLAS_MERGE_REPORT.md
+            reports/AUDIT.md
+            reports/MISSING_REAL_SYSTEMS.md
+            reports/API_HARVEST_LOG.md
+          retention-days: 30
+
