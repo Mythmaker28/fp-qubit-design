@@ -1,31 +1,31 @@
-mutant_id,base_protein,mutations,proxy_target,predicted_gain,uncertainty,rationale
-FP0034,TagRFP,R161V,contrast,+12.28,0.11,"Single mutation near chromophore, minimal structural perturbation"
-FP0003,EGFP,E65I,contrast,+12.28,2.22,"Single mutation near chromophore, minimal structural perturbation"
-FP0046,mNeonGreen,W62C;H64D,contrast,+9.54,0.00,"Double mutation, synergistic effect on chromophore environment"
-FP0021,TagRFP,Y65D;N197W;T164K,contrast,+5.36,0.00,"Multiple mutations, potential for enhanced photophysical properties"
-FP0063,EGFP,H205N,contrast,+5.27,1.15,"Single mutation near chromophore, minimal structural perturbation"
-FP0055,mNeonGreen,L64K,contrast,+5.27,1.53,"Single mutation near chromophore, minimal structural perturbation"
-FP0008,EGFP,S66C;N205M;G166N,contrast,+4.89,0.00,"Multiple mutations, potential for enhanced photophysical properties"
-FP0023,EGFP,N205H;F67Y;P203R,contrast,+4.47,0.07,"Multiple mutations, potential for enhanced photophysical properties"
-FP0093,TagRFP,K195W;T63I;T161P,contrast,+4.47,0.07,"Multiple mutations, potential for enhanced photophysical properties"
-FP0056,TagRFP,N64Y;Y161V;C63Y,contrast,+4.24,0.87,"Multiple mutations, potential for enhanced photophysical properties"
-FP0074,mNeonGreen,G143Y;A62S,contrast,+3.48,0.00,"Double mutation, synergistic effect on chromophore environment"
-FP0011,mNeonGreen,L62E;A64R,contrast,+3.48,0.00,"Double mutation, synergistic effect on chromophore environment"
-FP0029,mNeonGreen,A201T;E64C,contrast,+3.27,0.00,"Double mutation, synergistic effect on chromophore environment"
-FP0075,TagRFP,H195V,contrast,+3.02,0.00,"Single mutation near chromophore, minimal structural perturbation"
-FP0079,EGFP,V203H,contrast,+2.91,0.00,"Single mutation near chromophore, minimal structural perturbation"
-FP0086,mNeonGreen,F163W,contrast,+2.91,0.00,"Single mutation near chromophore, minimal structural perturbation"
-FP0020,EGFP,F163Q;Q165F;Y65G,contrast,+2.91,0.00,"Multiple mutations, potential for enhanced photophysical properties"
-FP0085,EGFP,R163D;K165C;C166E,contrast,+2.89,0.37,"Multiple mutations, potential for enhanced photophysical properties"
-FP0062,mNeonGreen,C143E;V201R;M164Q,contrast,+2.61,0.00,"Multiple mutations, potential for enhanced photophysical properties"
-FP0001,TagRFP,G66N,contrast,+2.61,0.00,"Single mutation near chromophore, minimal structural perturbation"
-FP0098,mNeonGreen,W203N;E65P,contrast,+2.61,0.00,"Double mutation, synergistic effect on chromophore environment"
-FP0099,EGFP,E66C;A203W,contrast,+2.53,0.02,"Double mutation, synergistic effect on chromophore environment"
-FP0080,EGFP,Y67T;M205T,contrast,+2.31,0.32,"Double mutation, synergistic effect on chromophore environment"
-FP0035,mNeonGreen,Y201H;E64D;W65M,contrast,+2.22,0.07,"Multiple mutations, potential for enhanced photophysical properties"
-FP0083,TagRFP,P66G;R64D;F197P,contrast,+2.22,4.48,"Multiple mutations, potential for enhanced photophysical properties"
-FP0042,mNeonGreen,Y163K;E64L;Y63E,contrast,+2.18,0.00,"Multiple mutations, potential for enhanced photophysical properties"
-FP0043,mNeonGreen,T164A;Q203E;K163F,contrast,+2.18,0.25,"Multiple mutations, potential for enhanced photophysical properties"
-FP0009,EGFP,I163F;Y67E;T165D,contrast,+2.18,0.42,"Multiple mutations, potential for enhanced photophysical properties"
-FP0096,mNeonGreen,E62W;F164N;K143F,contrast,+2.15,0.00,"Multiple mutations, potential for enhanced photophysical properties"
-FP0031,TagRFP,C164L,contrast,+2.10,0.11,"Single mutation near chromophore, minimal structural perturbation"
+mutant_id,base_protein,mutations,family,predicted_contrast,contrast_lower_q05,contrast_upper_q95,rationale,confidence
+FP_MUT_001,GCaMP6s,T302A;V224L,Calcium,18.5,12.3,26.8,"Calcium family shows high dynamic range; mutations near chromophore pocket",Medium
+FP_MUT_002,jRCaMP1a,Y145F,Calcium,22.1,15.2,31.5,"Red calcium sensor; aromatic substitution may enhance rigidity",Medium
+FP_MUT_003,ASAP3,K163R,Voltage,45.2,28.1,65.0,"Voltage family has highest contrast; conservative charge substitution",Low
+FP_MUT_004,EGFP,F64L;S65T,GFP-like,4.2,2.1,8.5,"Classic GFP mutations; moderate contrast expected",High
+FP_MUT_005,sfGFP,Q80R,GFP-like,3.8,1.9,7.2,"Superfolder stability; surface charge modification",High
+FP_MUT_006,mNeonGreen,A206K,GFP-like,5.1,2.8,9.3,"Prevent dimerization; may affect chromophore environment",Medium
+FP_MUT_007,TagRFP-T,S158A,RFP,8.9,5.2,14.7,"RFP family; serine to alanine near beta-barrel",Medium
+FP_MUT_008,mRuby3,V44A,RFP,11.2,6.8,17.3,"Far-red optimized; reduce steric bulk near chromophore",Medium
+FP_MUT_009,mCherry,Y67H,RFP,7.3,4.1,12.5,"Classic RFP; histidine may alter protonation state",Low
+FP_MUT_010,mKate2,K66R,Far-red,15.8,9.2,24.1,"Far-red family shows high variance; conservative substitution",Low
+FP_MUT_011,iRFP670,L174F,Far-red,18.3,10.5,28.9,"NIR fluorophore; phenylalanine increases aromaticity",Low
+FP_MUT_012,mCardinal,M160L,Far-red,12.7,7.3,20.1,"Large to medium hydrophobic; may reduce crowding",Medium
+FP_MUT_013,mTurquoise2,S72A,CFP-like,3.2,1.5,6.8,"CFP family; small conservative change",High
+FP_MUT_014,mCerulean3,Y145F,CFP-like,4.1,2.0,8.0,"Cyan optimized; aromatic ring substitution",Medium
+FP_MUT_015,CyPet,T203V,CFP-like,3.5,1.7,7.1,"FRET donor; beta-strand modification",Medium
+FP_MUT_016,dLight1.2,A270V,Dopamine,25.3,16.8,36.2,"Dopamine biosensor; increase steric bulk",Medium
+FP_MUT_017,dLight1.3b,N310D,Dopamine,28.1,19.2,39.5,"Biosensor optimization; charged residue change",Medium
+FP_MUT_018,GRAB_DA2m,L156F,Dopamine,31.4,21.7,43.8,"DA sensor; aromatic substitution enhances signal",Low
+FP_MUT_019,ASAP2s,D152E,Voltage,52.7,34.2,73.5,"Voltage sensor; conservative acidic substitution",Low
+FP_MUT_020,ArcLight,V60A,Voltage,48.9,31.5,68.2,"Classic voltage sensor; reduce side chain volume",Low
+FP_MUT_021,GCaMP7s,E124Q,Calcium,19.7,13.1,28.5,"Latest GCaMP; glutamine may alter Ca2+ affinity",Medium
+FP_MUT_022,R-CaMP2,T160S,Calcium,21.3,14.5,30.8,"Red calcium; conservative polar substitution",Medium
+FP_MUT_023,jGCaMP8m,N205D,Calcium,23.8,16.2,34.1,"Ultra-sensitive; charged residue near binding site",Low
+FP_MUT_024,YFP,T203Y,GFP-like,6.8,3.9,11.2,"Yellow FP; pi-stacking enhancement",Medium
+FP_MUT_025,Venus,F46L,GFP-like,5.9,3.2,10.1,"Optimized YFP; reduce aromatic bulk",Medium
+FP_MUT_026,mOrange2,K163R,Orange,9.5,5.8,15.3,"Orange FP; lysine to arginine conservative",Medium
+FP_MUT_027,LSSmOrange,A206K,Orange,10.2,6.3,16.4,"Large Stokes; anti-dimer mutation",Medium
+FP_MUT_028,mPlum,I161V,Far-red,14.2,8.5,22.3,"Far-red; branched to linear hydrophobic",Medium
+FP_MUT_029,E2-Crimson,V195A,Far-red,16.8,10.1,26.2,"Far-red optimization; alanine substitution",Low
+FP_MUT_030,miRFP670nano,L88F,NIR,20.5,12.7,31.8,"NIR bacteriophytochrome; increase aromaticity",Low
