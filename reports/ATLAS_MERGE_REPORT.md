@@ -1,16 +1,17 @@
 # ATLAS MERGE REPORT - fp-qubit-design v1.1.2
 
-**Generated**: 2025-10-23 21:02:07
+**Generated**: 2025-10-23 21:09:03
 
 ---
 
 ## Summary
 
-- **Total unique systems**: 26
-- **Total releases merged**: 2
+- **Total unique systems**: 34
+- **Total releases merged**: 3
 
 ## Systems by Release
 
+- **infra**: 8 systems
 - **main**: 21 systems
 - **v1.2.0**: 5 systems
 
@@ -18,71 +19,71 @@
 
 | Field | Non-null Count | Coverage % |
 |-------|----------------|------------|
-| `Systeme` | 26 | 100.0% |
-| `Classe` | 26 | 100.0% |
-| `Hote_contexte` | 26 | 100.0% |
-| `Methode_lecture` | 26 | 100.0% |
-| `B0_Tesla` | 26 | 100.0% |
-| `Spin_type` | 26 | 100.0% |
-| `Temperature_K` | 26 | 100.0% |
-| `Cytotox_flag` | 26 | 100.0% |
-| `Hyperpol_flag` | 26 | 100.0% |
-| `Notes` | 26 | 100.0% |
-| `Verification_statut` | 26 | 100.0% |
-| `Qualite` | 26 | 100.0% |
-| `Annee` | 26 | 100.0% |
-| `In_vivo_flag` | 26 | 100.0% |
-| `DOI` | 26 | 100.0% |
-| `Limitations` | 26 | 100.0% |
-| `Conditions` | 26 | 100.0% |
-| `Temp_controlled` | 26 | 100.0% |
-| `Toxicity_note` | 26 | 100.0% |
-| `Frequence` | 25 | 96.2% |
-| `T2_us` | 25 | 96.2% |
-| `T2_us_err` | 25 | 96.2% |
-| `Source_T2` | 23 | 88.5% |
-| `Defaut` | 16 | 61.5% |
-| `Contraste_err` | 15 | 57.7% |
-| `Contraste_%` | 15 | 57.7% |
-| `Source_Contraste` | 14 | 53.8% |
-| `Taille_objet_nm` | 13 | 50.0% |
-| `T1_s_err` | 11 | 42.3% |
-| `T1_s` | 11 | 42.3% |
-| `Source_T1` | 10 | 38.5% |
-| `Photophysique` | 9 | 34.6% |
-| `Polytype_Site` | 4 | 15.4% |
+| `Systeme` | 34 | 100.0% |
+| `Classe` | 34 | 100.0% |
+| `Hote_contexte` | 34 | 100.0% |
+| `Methode_lecture` | 34 | 100.0% |
+| `B0_Tesla` | 34 | 100.0% |
+| `Spin_type` | 34 | 100.0% |
+| `Temperature_K` | 34 | 100.0% |
+| `Cytotox_flag` | 34 | 100.0% |
+| `Hyperpol_flag` | 34 | 100.0% |
+| `Notes` | 34 | 100.0% |
+| `Verification_statut` | 34 | 100.0% |
+| `Qualite` | 34 | 100.0% |
+| `Annee` | 34 | 100.0% |
+| `In_vivo_flag` | 34 | 100.0% |
+| `DOI` | 34 | 100.0% |
+| `Limitations` | 34 | 100.0% |
+| `Conditions` | 34 | 100.0% |
+| `Temp_controlled` | 34 | 100.0% |
+| `Toxicity_note` | 34 | 100.0% |
+| `Frequence` | 33 | 97.1% |
+| `T2_us` | 33 | 97.1% |
+| `T2_us_err` | 33 | 97.1% |
+| `Source_T2` | 31 | 91.2% |
+| `Defaut` | 19 | 55.9% |
+| `Contraste_err` | 17 | 50.0% |
+| `Contraste_%` | 17 | 50.0% |
+| `Taille_objet_nm` | 16 | 47.1% |
+| `Source_Contraste` | 15 | 44.1% |
+| `T1_s_err` | 14 | 41.2% |
+| `T1_s` | 14 | 41.2% |
+| `Source_T1` | 13 | 38.2% |
+| `Photophysique` | 12 | 35.3% |
+| `Polytype_Site` | 4 | 11.8% |
 
 ## Key Measurements (Real Data)
 
 ### Contrast (%)
 ```
-N:      15
-Mean:   9.73
-Std:    7.26
+N:      17
+Mean:   8.88
+Std:    7.20
 Range:  [2.00, 30.00]
 ```
 
 ### Temperature (K)
 ```
-N:      26
-Mean:   280.62
-Std:    71.79
+N:      34
+Mean:   278.91
+Std:    72.54
 Range:  [4.00, 310.00]
 ```
 
 ### T2 (µs)
 ```
-N:      25
-Mean:   26432.65
-Std:    119569.91
+N:      33
+Mean:   20691.46
+Std:    104079.26
 Range:  [0.00, 600000.00]
 ```
 
 ### T1 (s)
 ```
-N:      11
-Mean:   115.45
-Std:    262.52
+N:      14
+Mean:   97.86
+Std:    232.96
 Range:  [0.00, 900.00]
 ```
 
