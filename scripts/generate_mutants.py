@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Generate mutant candidates for FP-Qubit Design.
 
@@ -75,7 +76,7 @@ def main():
     print(f"       Allowed residues: {config['mutants']['allowed_residues']}")
     
     # TODO: Featurize mutants
-    print("[TODO] Featurize mutants (AA composition, ΔΔG, chromophore distance)")
+    print("[TODO] Featurize mutants (AA composition, ddG, chromophore distance)")
     
     # TODO: Score mutants
     print("[TODO] Score mutants with proxy predictions (lifetime, contrast)")

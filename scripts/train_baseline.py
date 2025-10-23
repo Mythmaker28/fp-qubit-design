@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Train baseline ML models (Random Forest, XGBoost) for FP mutant property prediction.
 
@@ -67,7 +68,7 @@ def main():
     print("[TODO] Map Atlas columns to FP proxies (lifetime, contrast, temperature)")
     
     # TODO: Load or generate mutant features
-    print("[TODO] Load/generate mutant features (AA composition, ΔΔG, etc.)")
+    print("[TODO] Load/generate mutant features (AA composition, ddG, etc.)")
     
     # TODO: Train baseline models
     print("[TODO] Train Random Forest / XGBoost models")
