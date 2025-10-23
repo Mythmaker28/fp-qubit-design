@@ -4,25 +4,29 @@
 
 Ce dépôt fournit un cadre logiciel pour la **conception in silico de mutants de protéines fluorescentes (FP) optimisés** pour des proxies photophysiques liés aux qubits biologiques. L'objectif est de proposer, à terme, des candidats mutants qui maximisent la cohérence quantique (temps de vie T2), le contraste optique, et d'autres métriques pertinentes pour les applications de **bio-sensing quantique**.
 
-**Version actuelle** : **v1.0.0** — Release publique avec baseline ML fonctionnel, shortlist de 30 mutants optimisés, et figures de visualisation.
+**Version actuelle** : **v1.1.2** — Release publique avec ETL Atlas complet, **34 systèmes réels** (17 avec contraste mesuré), baseline ML fonctionnel, et shortlist de mutants optimisés.
 
 ## Contexte
 
-- **Projet parent** : [Biological Qubits Atlas](https://github.com/Mythmaker28/biological-qubits-atlas) — un jeu de données CSV (~22 systèmes quantiques en contexte biologique) avec des mesures de cohérence (T1/T2), contraste, et provenance (licence CC BY 4.0).
+- **Projet parent** : [Biological Qubits Atlas](https://github.com/Mythmaker28/biological-qubits-atlas) — un jeu de données CSV (**34 systèmes quantiques** en contexte biologique, réconciliés depuis 9 sources) avec des mesures de cohérence (T1/T2), contraste (17 systèmes), et provenance (licence CC BY 4.0).
 - **Approche** : 100% logiciel, aucune expérimentation en laboratoire. On utilise l'Atlas comme référence de proxies photophysiques (lifetime, contraste, température) pour guider la conception de mutants FP.
 - **Cible** : Protéines fluorescentes de la famille GFP-like, avec un focus sur les propriétés de cohérence et photostabilité.
 - **Publication prévue** : Zenodo + GitHub Pages (table HTML des mutants shortlistés).
 
 ## Données sources et provenance
 
-Les proxies sont basés sur un snapshot de l'Atlas :
+Les proxies sont basés sur une **réconciliation exhaustive** de l'Atlas (v1.1.2) :
 - **Repo source** : https://github.com/Mythmaker28/biological-qubits-atlas
-- **Commit** : `abd6a4cd7dde94dc4ca7cde69aee3fad25757bcf`
+- **Sources mergées** : main, v1.2.0, v1.2.1, develop, infra/pages+governance, feat/data-v1.2-extended, docs/doi-badge, chore/zenodo-metadata, chore/citation-author (9 sources)
+- **Systèmes uniques** : **34** (déduplication context-aware)
+- **Avec contraste mesuré** : **17 / 34** (50%)
 - **Schéma** : v1.2 (~33 colonnes)
 - **Licence** : CC BY 4.0
-- **Snapshot local** : `data/processed/atlas_snapshot.csv` (lecture seule, ne pas modifier)
+- **Table finale** : `data/processed/training_table.csv` + `data/processed/TRAINING.METADATA.json`
 
-Le fichier `data/processed/atlas_snapshot.METADATA.json` contient les métadonnées de provenance complètes.
+📊 **Statistiques contraste** : mean=8.88%, std=7.20%, range=[2.00%, 30.00%]
+
+📄 **Rapports** : `reports/AUDIT.md`, `reports/MISSING_REAL_SYSTEMS.md`, `reports/ATLAS_MERGE_REPORT.md`
 
 ## Installation
 
