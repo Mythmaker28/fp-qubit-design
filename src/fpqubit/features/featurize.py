@@ -59,3 +59,4 @@ def featurize_mutations(base_sequence: str, mutations: list) -> dict:
     }
     return features
 
+

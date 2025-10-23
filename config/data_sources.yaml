@@ -1,0 +1,53 @@
+# Data Sources Configuration - fp-qubit-design v1.1.4
+
+# Atlas v1.2.1 - FP Optical systems only
+atlas:
+  # Note: atlas_fp_optical.csv is a filtered subset created from biological_qubits.csv
+  # Filter: is_optical=True AND is_fp_like=True (FP or QD only)
+  # Source: https://github.com/Mythmaker28/biological-qubits-atlas
+  version: "v1.2.1"
+  release_url: "https://github.com/Mythmaker28/biological-qubits-atlas/releases/tag/v1.2.1"
+  
+  # Full Atlas CSV (all systems)
+  full_csv_url: "https://github.com/Mythmaker28/biological-qubits-atlas/releases/download/v1.2.1/biological_qubits.csv"
+  full_csv_sha256: "8d75d58dfbf8660fb853db1cd7ea122c3efb4ebf2150671942bb8fac3c650839"
+  
+  # Filtered FP Optical CSV (to be created locally)
+  # Expected: ~66 entries (estimated from v1.1.3 classification)
+  # Measured tier A/B: ~54 entries
+  fp_optical_csv_local: "data/external/atlas_fp_optical_v1_2_1.csv"
+  
+  license: "CC BY 4.0"
+  citation: "Lepesteur, T. (2025). Biological Qubits Atlas. GitHub. https://github.com/Mythmaker28/biological-qubits-atlas"
+
+# Tiers de qualité pour contrast_normalized
+quality_tiers:
+  A: "Measured, peer-reviewed, error bars"
+  B: "Measured, peer-reviewed, no error bars"
+  C: "Estimated or computed"
+  
+# Colonnes attendues dans atlas_fp_optical.csv
+expected_schema:
+  required:
+    - system_id
+    - protein_name
+    - family
+    - contrast_ratio  # Original (%)
+    - contrast_normalized  # ΔF/F₀ format
+    - contrast_quality_tier  # A/B/C
+    - contrast_source  # measured/computed
+    - excitation_nm
+    - emission_nm
+    - temperature_K
+    - pH
+    - is_biosensor
+    - source_refs
+    - license_source
+    - evidence_type
+  optional:
+    - quantum_yield
+    - lifetime_ns
+    - photostability
+    - host_context
+    - method
+
