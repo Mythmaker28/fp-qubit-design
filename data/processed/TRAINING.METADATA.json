@@ -1,10 +1,13 @@
 {
-  "source": "fallback_local",
-  "original_path": "C:\\Users\\tommy\\Documents\\atlas suite\\fp-qubit-design\\data\\external\\atlas_fp_optical_v1_2_1.csv",
-  "release": "v1.2.1",
+  "source": "github_multi_path",
+  "repo": "Mythmaker28/biological-qubits-atlas",
+  "source_name": "main: data/processed/",
+  "source_url": "https://raw.githubusercontent.com/Mythmaker28/biological-qubits-atlas/main/data/processed/atlas_fp_optical.csv",
   "file": "atlas_fp_optical.csv",
-  "sha256": "0c79b6c5fa523fb8f4da0ae512f1bc32b270e4677602b53e85cd24d74330738c",
-  "size_bytes": 689,
+  "sha256": "4b847f48eef6d65efc819e5bb54451bd0ab124faa4d3538e83c396794df3ac90",
+  "expected_sha256": "333adc871f5b2ec5118298de4e534a468c7379f053d8b03c13d7cd9eb7c43285",
+  "sha256_match": false,
+  "size_bytes": 7930,
   "path": "C:\\Users\\tommy\\Documents\\atlas suite\\fp-qubit-design\\data\\processed\\atlas_fp_optical.csv",
-  "method": "Chemin B (Fallback Local)"
+  "date": "2025-10-24"
 }

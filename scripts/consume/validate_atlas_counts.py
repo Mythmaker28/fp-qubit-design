@@ -165,7 +165,7 @@ See `reports/SUGGESTIONS.md` for detailed alternatives.
         return False
     
     else:
-        print("\n[SUCCESS] All counts match! ✓")
+        print("\n[SUCCESS] All counts match! [OK]")
         print("="*60)
         return True
 
