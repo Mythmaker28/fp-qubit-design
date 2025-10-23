@@ -1,56 +1,64 @@
 {
-  "schema_version": "v1.1.2",
-  "created": "2025-10-23 21:10:54",
-  "source": "biological-qubits-atlas (multiple releases + branches)",
+  "schema_version": "v1.1.3",
+  "created": "2025-10-23 21:29:47",
+  "source": "biological-qubits-atlas (9 sources reconciled)",
   "license": "CC BY 4.0",
   "citation": "Lepesteur, T. (2025). Biological Qubits Atlas. GitHub. https://github.com/Mythmaker28/biological-qubits-atlas",
-  "total_systems": 34,
-  "real_systems": 34,
-  "synthetic_systems": 0,
-  "with_contrast_measured": 17,
+  "tables": {
+    "atlas_all_real.csv": {
+      "description": "ALL real Atlas systems (optical + non-optical)",
+      "n_systems": 34,
+      "n_optical": 13,
+      "n_non_optical": 21
+    },
+    "training_table_optical.csv": {
+      "description": "ONLY optical systems (filtered from atlas_all_real)",
+      "n_systems": 13,
+      "n_with_contrast": 12,
+      "n_fp_like": 3,
+      "n_fp_like_with_contrast": 2
+    }
+  },
   "columns": {
-    "system_id": "Unique identifier (normalized system name)",
+    "SystemID": "Unique identifier (normalized system name)",
     "protein_name": "Original system name from Atlas",
     "class": "System class (A/B/C/D)",
     "host_context": "Biological context (in_vitro, in_cellulo, in_vivo, ex_vivo)",
     "method": "Readout method (ODMR, ESR, NMR, Optical-only, Indirect)",
-    "contrast_ratio": "Contrast (%), directly from Atlas Contraste_% column",
-    "contrast_ci": "Contrast error/CI from Atlas",
+    "contrast_ratio": "Contrast (%) from Atlas Contraste_% column",
+    "contrast_ci": "Contrast error/CI",
     "contrast_source": "measured (if Atlas has Contraste_%), unknown otherwise",
-    "temperature_K": "Temperature in Kelvin",
-    "t1_s": "T1 relaxation time (seconds)",
-    "t2_us": "T2 coherence time (microseconds)",
+    "temperature_K": "Temperature (K)",
+    "t1_s": "T1 relaxation (s)",
+    "t2_us": "T2 coherence (\u00b5s)",
     "frequency": "Operating frequency",
-    "b0_tesla": "Magnetic field (Tesla)",
+    "b0_tesla": "Magnetic field (T)",
     "quality": "Quality rating (1-3)",
     "verification_status": "verifie or a_confirmer",
     "in_vivo_flag": "In vivo demonstration (0/1)",
+    "is_optical": "Optical readout system (1/0)",
+    "is_fp_like": "Fluorescent protein or quantum dot (1/0)",
+    "in_scope_training": "Suitable for FP-qubit design (optical + FP-like)",
     "is_real": "Real data (1) vs synthetic (0)",
     "source_release_tag": "Git tag/branch of origin",
     "source_asset": "Asset filename",
     "source_sha256": "SHA256 checksum",
-    "published_at": "Publication date (YYYY-MM-DD)"
-  },
-  "statistics": {
-    "contrast_ratio": {
-      "n": 17,
-      "mean": 8.882352941176471,
-      "std": 7.201409175824344,
-      "min": 2.0,
-      "max": 30.0
-    },
-    "temperature_K": {
-      "n": 34,
-      "mean": 278.9117647058824,
-      "std": 72.5360381265373,
-      "min": 4.0,
-      "max": 310.0
-    }
+    "published_at": "Publication date"
   },
   "notes": [
-    "All data sourced from biological-qubits-atlas (multiple releases and branches)",
-    "Deduplication performed based on SystemID (normalized system name)",
-    "contrast_ratio comes directly from Atlas Contraste_% column (no computation)",
-    "No synthetic data included in v1.1.2"
-  ]
+    "v1.1.3 separates ALL real systems (atlas_all_real) from OPTICAL training slice (training_table_optical)",
+    "Modality classification based on method, class, and keyword patterns",
+    "Optical: fluorescence, ODMR, quantum dots, FP families",
+    "Non-optical: NMR, ESR, hyperpolarized, magnetoreception, indirect",
+    "Only 3 FP-like systems found (1 FP + 2 QD); rest are color centers (NV, SiV, etc.)"
+  ],
+  "statistics": {
+    "optical_contrast_ratio": {
+      "n": 12,
+      "mean": 10.583333333333334,
+      "std": 7.63316130545867,
+      "min": 3.0,
+      "max": 30.0
+    }
+  }
 }
