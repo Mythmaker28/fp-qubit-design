@@ -1,0 +1,11 @@
+{
+  "source_repo": "https://github.com/Mythmaker28/biological-qubits-atlas",
+  "branch": "main",
+  "commit": "abd6a4cd7dde94dc4ca7cde69aee3fad25757bcf",
+  "schema": "v1.2",
+  "rows": 22,
+  "date_cloned": "2025-10-23",
+  "license": "CC BY 4.0",
+  "notes": "Snapshot en lecture seule pour contexte du projet fp-qubit-design. Ne pas modifier."
+}
+

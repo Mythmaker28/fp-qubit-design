@@ -1,0 +1,32 @@
+# Configuration exemple pour fp-qubit-design
+# Version: 0.1.0
+
+# Chemins
+data:
+  atlas_snapshot: "data/processed/atlas_snapshot.csv"
+  output_dir: "data/processed/"
+  figures_dir: "figures/"
+
+# Paramètres globaux
+seed: 42
+n_mutants: 100  # Nombre de mutants à générer (placeholder)
+
+# Proxies (mapping Atlas → FP)
+proxies:
+  lifetime: 0.3        # Poids relatif (placeholder)
+  contrast: 0.5
+  temperature: 0.2
+
+# Baseline ML
+baseline:
+  model_type: "random_forest"  # Options: random_forest, xgboost
+  n_estimators: 100
+  max_depth: 10
+  cv_folds: 5
+
+# Mutants
+mutants:
+  base_proteins: ["EGFP", "mNeonGreen", "TagRFP"]
+  max_mutations_per_mutant: 3
+  allowed_residues: "ARNDCEQGHILKMFPSTWYV"  # 20 AA standards
+

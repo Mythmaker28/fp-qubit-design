@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "FP-Qubit Design"
+type: software
+version: "0.1.0"
+date-released: 2025-10-23
+authors:
+  - family-names: Lepesteur
+    given-names: Tommy
+    orcid: https://orcid.org/0009-0009-0577-9563
+repository-code: "https://github.com/Mythmaker28/fp-qubit-design"
+license: Apache-2.0
+abstract: "Cadre logiciel pour la conception in silico de mutants de protéines fluorescentes optimisés pour des proxies liés aux qubits biologiques (cohérence, contraste photophysique). Projet squelette prêt pour développement de baselines ML et publication via Zenodo/GitHub Pages."
+keywords:
+  - quantum-sensing
+  - biophysics
+  - fluorescent-proteins
+  - protein-design
+  - machine-learning
+  - biological-qubits
+

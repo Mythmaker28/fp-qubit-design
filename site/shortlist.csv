@@ -1,0 +1,5 @@
+mutant_id,base_protein,mutations,proxy_target,predicted_gain,uncertainty,rationale
+FP0001,EGFP,K166R;S205T,lifetime,+0.12,0.05,"Stabilise H-bond network near chromophore"
+FP0002,mNeonGreen,A150V,ISC,-0.07,0.03,"Reduces triplet yield in silico (proxy)"
+FP0003,TagRFP,Q95L;I197F,contrast,+0.09,0.04,"Aromatic packing close to chromophore"
+
