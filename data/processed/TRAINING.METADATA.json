@@ -1,0 +1,21 @@
+{
+  "created": "2025-10-23 20:43:25",
+  "sources": [
+    {
+      "type": "Atlas snapshot",
+      "file": "atlas_snapshot.csv",
+      "license": "CC BY 4.0",
+      "url": "https://github.com/Mythmaker28/biological-qubits-atlas"
+    },
+    {
+      "type": "Synthetic FP data",
+      "description": "Augmented training examples based on literature FP values (EGFP, mNeonGreen, TagRFP, mCherry, mTurquoise2)",
+      "license": "Generated (no restrictions)",
+      "note": "NOT experimental data, used for training augmentation only"
+    }
+  ],
+  "total_rows": 39,
+  "atlas_rows": 19,
+  "synthetic_rows": 20,
+  "schema_version": "v1.1"
+}

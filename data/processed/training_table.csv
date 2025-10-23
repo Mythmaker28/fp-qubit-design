@@ -1,0 +1,40 @@
+Systeme,Classe,Hote_contexte,Methode_lecture,Temperature_K,Contraste_%,Qualite,Verification_statut,In_vivo_flag,Cytotox_flag,Provenance
+Protéine fluorescente avec lecture ODMR,A,Cellules HeLa (in_cellulo),ODMR,295.0,12.0,3,verifie,0,1,
+Nanodiamants NV (50-100 nm) en cellules HeLa,B,Cellules HeLa (in_cellulo),ODMR,295.0,15.0,3,verifie,0,1,
+Nanodiamants NV (25 nm) en C. elegans,B,C. elegans (in_vivo),ODMR,295.0,10.0,3,verifie,1,0,
+Défauts VSi dans SiC (nanoparticules 80 nm),B,Cellules HEK293 (in_cellulo),ODMR,295.0,8.0,2,verifie,0,1,
+Défauts VSi-SiC en tissu cardiaque ex vivo,B,Tissu cardiaque souris (ex_vivo),ODMR,310.0,6.0,2,verifie,0,0,
+Nanotubes de carbone avec défauts sp3,B,Solution tampon PBS (in_vitro),ESR,295.0,5.0,2,a_confirmer,0,0,
+Centres NV bulk (diamant macroscopique),B,Interface tissu neural (ex_vivo),ODMR,295.0,30.0,2,verifie,0,0,
+Pyruvate ^13C hyperpolarisé (DNP),C,Souris/Humain (in_vivo),NMR,295.0,,3,verifie,1,0,
+Glucose ^13C hyperpolarisé,C,Rat (in_vivo),NMR,310.0,,2,verifie,1,0,
+Fumarate ^13C hyperpolarisé,C,Souris (in_vivo),NMR,295.0,,2,verifie,1,0,
+^15N-marqué pour DNP ultra-longue,C,Solution aqueuse (in_vitro),NMR,295.0,,1,verifie,0,0,
+Radicaux nitroxyde (TEMPO) en imagerie EPR,C,Souris (in_vivo),ESR,310.0,,2,verifie,1,1,
+Cryptochrome (Cry1) - paires radicalaires,D,Cellules rétiniennes oiseaux (in_vivo),Indirect,310.0,,1,a_confirmer,1,0,
+Protéine LOV2 modifiée (flavine),A,Lysat E. coli (in_vitro),ESR,295.0,2.0,1,a_confirmer,0,0,
+Centres GeV dans diamant (bioconjugué),B,Neurones primaires culture (in_vitro),ODMR,295.0,7.0,2,a_confirmer,0,1,
+Magnétosomes bactériens (Magnetospirillum),D,Bactéries magnétotactiques (in_vivo),Indirect,295.0,,1,verifie,1,0,
+NV ensembles en microcristaux (10 µm) injectés,B,Cerveau souris (in_vivo),ODMR,295.0,18.0,3,verifie,1,1,
+Défauts divacancy VV dans SiC (nanoparticules),B,Cellules HeLa (in_cellulo),ODMR,295.0,10.0,2,a_confirmer,0,1,
+Défauts Ti:C dans SiC (en développement),B,In vitro (poudre SiC) (in_vitro),ODMR,295.0,3.0,1,a_confirmer,0,0,
+EGFP_syn01,Synthetic-FP,in_vitro (synthetic),Optical-only,294.3086784941441,15.993428306022466,3,a_confirmer,0,0,Literature + augmentation
+mNeonGreen_syn02,Synthetic-FP,in_vitro (synthetic),Optical-only,302.61514928204014,21.295377076201383,3,a_confirmer,0,0,Literature + augmentation
+TagRFP_syn03,Synthetic-FP,in_vitro (synthetic),Optical-only,293.8293152152541,11.531693250553328,2,a_confirmer,0,0,Literature + augmentation
+mCherry_syn04,Synthetic-FP,in_vitro (synthetic),Optical-only,298.83717364576455,11.158425631014783,2,a_confirmer,0,0,Literature + augmentation
+mTurquoise2_syn05,Synthetic-FP,in_vitro (synthetic),Optical-only,312.71280021792984,21.061051228130097,3,a_confirmer,0,0,Literature + augmentation
+EGFP_syn06,Synthetic-FP,in_vitro (synthetic),Optical-only,292.6713512321487,14.073164614375075,3,a_confirmer,0,0,Literature + augmentation
+mNeonGreen_syn07,Synthetic-FP,in_vitro (synthetic),Optical-only,285.433598776711,20.48392454313207,3,a_confirmer,0,0,Literature + augmentation
+TagRFP_syn08,Synthetic-FP,in_vitro (synthetic),Optical-only,292.18856235379513,8.550164334973935,2,a_confirmer,0,0,Literature + augmentation
+mCherry_syn09,Synthetic-FP,in_vitro (synthetic),Optical-only,296.5712366629764,5.974337759331153,2,a_confirmer,0,0,Literature + augmentation
+mTurquoise2_syn10,Synthetic-FP,in_vitro (synthetic),Optical-only,302.93848149332354,20.183951848957577,3,a_confirmer,0,0,Literature + augmentation
+EGFP_syn11,Synthetic-FP,in_vitro (synthetic),Optical-only,293.8711184975673,17.931297537843108,3,a_confirmer,0,0,Literature + augmentation
+mNeonGreen_syn12,Synthetic-FP,in_vitro (synthetic),Optical-only,287.8762590689327,20.13505640937585,3,a_confirmer,0,0,Literature + augmentation
+TagRFP_syn13,Synthetic-FP,in_vitro (synthetic),Optical-only,295.55461294854933,10.911234550949635,2,a_confirmer,0,0,Literature + augmentation
+mCherry_syn14,Synthetic-FP,in_vitro (synthetic),Optical-only,296.87849009172834,5.698012845155395,2,a_confirmer,0,0,Literature + augmentation
+mTurquoise2_syn15,Synthetic-FP,in_vitro (synthetic),Optical-only,308.54153125103363,20.79872262016239,3,a_confirmer,0,0,Literature + augmentation
+EGFP_syn16,Synthetic-FP,in_vitro (synthetic),Optical-only,304.2613909225447,13.796586775541206,3,a_confirmer,0,0,Literature + augmentation
+mNeonGreen_syn17,Synthetic-FP,in_vitro (synthetic),Optical-only,289.7114453552205,19.97300555052413,3,a_confirmer,0,0,Literature + augmentation
+TagRFP_syn18,Synthetic-FP,in_vitro (synthetic),Optical-only,288.89578175014486,13.645089824206378,2,a_confirmer,0,0,Literature + augmentation
+mCherry_syn19,Synthetic-FP,in_vitro (synthetic),Optical-only,285.2016493806011,8.417727190009511,2,a_confirmer,0,0,Literature + augmentation
+mTurquoise2_syn20,Synthetic-FP,in_vitro (synthetic),Optical-only,310.9843061793456,19.34362790220314,3,a_confirmer,0,0,Literature + augmentation
