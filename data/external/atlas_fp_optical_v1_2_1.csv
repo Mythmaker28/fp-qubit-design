@@ -1,3 +1,0 @@
-system_id,protein_name,family,contrast_ratio,contrast_normalized,contrast_quality_tier,contrast_source,excitation_nm,emission_nm,temperature_K,pH,is_biosensor,source_refs,license_source,evidence_type,host_context,method
-prot_ine_fluorescente_avec_lecture_odmr,Protéine fluorescente avec lecture ODMR,Other,12.0,0.12,C,measured,,,295,,False,10.1038/s41586-024-08300-4,CC BY 4.0 (Biological Qubits Atlas),verifie,Cellules HeLa (in_cellulo),ODMR
-quantum_dots_cdse_avec_lecture_de_spin,Quantum dots CdSe avec lecture de spin,QuantumDot,3.0,0.03,C,measured,,,77,,False,10.1103/PhysRevLett.104.067405,CC BY 4.0 (Biological Qubits Atlas),verifie,Solution cryogénique (in_vitro),Optical-only
