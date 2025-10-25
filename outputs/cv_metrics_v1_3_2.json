@@ -1,0 +1,57 @@
+{
+  "version": "v1.3.2",
+  "n_systems": 178,
+  "model": "RandomForest + GBDT Quantiles + CQR",
+  "cv_folds": 5,
+  "metrics": {
+    "r2": -0.5258049804159834,
+    "mae": 9.488054056481815,
+    "coverage": 0.8876404494382022,
+    "ece": 61.32016079224007,
+    "r2_std": 51.501208700155324,
+    "mae_std": 10.281153961338509,
+    "coverage_std": 0.00325012323238463,
+    "ece_std": 7.207579702622875
+  },
+  "baselines": {
+    "mean_mae_orig": 9.559984850397676,
+    "median_mae_orig": 7.492022471910112,
+    "mean_mae_log": 0.7895630282782237,
+    "median_mae_log": 0.7729189965911977
+  },
+  "acceptance_criteria": {
+    "n_utiles": {
+      "value": 178.0,
+      "target": 100,
+      "pass": true
+    },
+    "r2": {
+      "value": -0.5258049804159834,
+      "target": 0.2,
+      "pass": false
+    },
+    "mae": {
+      "value": 9.488054056481815,
+      "target": 7.81,
+      "pass": false
+    },
+    "ece": {
+      "value": 61.32016079224007,
+      "target": 0.15,
+      "pass": false
+    },
+    "coverage": {
+      "value": 0.8876404494382022,
+      "target": [
+        0.85,
+        0.95
+      ],
+      "pass": true
+    },
+    "beat_baseline": {
+      "value": 0.007524153546422088,
+      "target": 0.1,
+      "pass": false
+    }
+  }
+}
