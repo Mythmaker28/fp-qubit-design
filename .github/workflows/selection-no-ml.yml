@@ -1,0 +1,37 @@
+name: selection-no-ml
+
+on:
+  pull_request:
+    branches: [ master ]
+  push:
+    branches: [ selection/v2.2.3-noml ]
+
+jobs:
+  run-selection:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Ensure input table
+        run: |
+          test -f data/processed/TRAINING_TABLE_v2_2_2_balanced.csv || (echo 'Missing balanced table' && exit 1)
+      - name: Extend table (adds QY, EC, brightness)
+        run: |
+          python scripts/extend_table_qy_ec.py
+      - name: Run no-ML selection
+        run: |
+          python scripts/select_shortlist_noml.py
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: shortlist_v2_2_3_noml
+          path: |
+            data/processed/TRAINING_TABLE_v2_2_2_extended.csv
+            deliverables/lab_v2_2_3/shortlist_top12_final.csv
+            figures/spectral_coverage_v2_2_3.png
