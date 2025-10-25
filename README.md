@@ -162,3 +162,4 @@ Ce projet est ouvert aux contributions. Actuellement en phase de dÃ©veloppemen
 **Statut** : âœ… v1.0.0 Release publique â€” Pleinement fonctionnel
 
 
+
