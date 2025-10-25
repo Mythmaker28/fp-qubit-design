@@ -1,49 +1,49 @@
-# FP-Qubit Design
+﻿# FP-Qubit Design
 
 ## But
 
-Ce dépôt fournit un cadre logiciel pour la **conception in silico de mutants de protéines fluorescentes (FP) optimisés** pour des proxies photophysiques liés aux qubits biologiques. L'objectif est de proposer, à terme, des candidats mutants qui maximisent la cohérence quantique (temps de vie T2), le contraste optique, et d'autres métriques pertinentes pour les applications de **bio-sensing quantique**.
+Ce dÃ©pÃ´t fournit un cadre logiciel pour la **conception in silico de mutants de protÃ©ines fluorescentes (FP) optimisÃ©s** pour des proxies photophysiques liÃ©s aux qubits biologiques. L'objectif est de proposer, Ã  terme, des candidats mutants qui maximisent la cohÃ©rence quantique (temps de vie T2), le contraste optique, et d'autres mÃ©triques pertinentes pour les applications de **bio-sensing quantique**.
 
-**Version actuelle** : **v1.1.2** — Release publique avec ETL Atlas complet, **34 systèmes réels** (17 avec contraste mesuré), baseline ML fonctionnel, et shortlist de mutants optimisés.
+**Version actuelle** : **v1.1.2** â€” Release publique avec ETL Atlas complet, **34 systÃ¨mes rÃ©els** (17 avec contraste mesurÃ©), baseline ML fonctionnel, et shortlist de mutants optimisÃ©s.
 
 ## Contexte
 
-- **Projet parent** : [Biological Qubits Atlas](https://github.com/Mythmaker28/biological-qubits-atlas) — un jeu de données CSV (**34 systèmes quantiques** en contexte biologique, réconciliés depuis 9 sources) avec des mesures de cohérence (T1/T2), contraste (17 systèmes), et provenance (licence CC BY 4.0).
-- **Approche** : 100% logiciel, aucune expérimentation en laboratoire. On utilise l'Atlas comme référence de proxies photophysiques (lifetime, contraste, température) pour guider la conception de mutants FP.
-- **Cible** : Protéines fluorescentes de la famille GFP-like, avec un focus sur les propriétés de cohérence et photostabilité.
-- **Publication prévue** : Zenodo + GitHub Pages (table HTML des mutants shortlistés).
+- **Projet parent** : [Biological Qubits Atlas](https://github.com/Mythmaker28/biological-qubits-atlas) â€” un jeu de donnÃ©es CSV (**34 systÃ¨mes quantiques** en contexte biologique, rÃ©conciliÃ©s depuis 9 sources) avec des mesures de cohÃ©rence (T1/T2), contraste (17 systÃ¨mes), et provenance (licence CC BY 4.0).
+- **Approche** : 100% logiciel, aucune expÃ©rimentation en laboratoire. On utilise l'Atlas comme rÃ©fÃ©rence de proxies photophysiques (lifetime, contraste, tempÃ©rature) pour guider la conception de mutants FP.
+- **Cible** : ProtÃ©ines fluorescentes de la famille GFP-like, avec un focus sur les propriÃ©tÃ©s de cohÃ©rence et photostabilitÃ©.
+- **Publication prÃ©vue** : Zenodo + GitHub Pages (table HTML des mutants shortlistÃ©s).
 
-## Données sources et provenance
+## DonnÃ©es sources et provenance
 
-Les proxies sont basés sur une **réconciliation exhaustive** de l'Atlas (v1.1.2) :
+Les proxies sont basÃ©s sur une **rÃ©conciliation exhaustive** de l'Atlas (v1.1.2) :
 - **Repo source** : https://github.com/Mythmaker28/biological-qubits-atlas
-- **Sources mergées** : main, v1.2.0, v1.2.1, develop, infra/pages+governance, feat/data-v1.2-extended, docs/doi-badge, chore/zenodo-metadata, chore/citation-author (9 sources)
-- **Systèmes uniques** : **34** (déduplication context-aware)
-- **Avec contraste mesuré** : **17 / 34** (50%)
-- **Schéma** : v1.2 (~33 colonnes)
+- **Sources mergÃ©es** : main, v1.2.0, v1.2.1, develop, infra/pages+governance, feat/data-v1.2-extended, docs/doi-badge, chore/zenodo-metadata, chore/citation-author (9 sources)
+- **SystÃ¨mes uniques** : **34** (dÃ©duplication context-aware)
+- **Avec contraste mesurÃ©** : **17 / 34** (50%)
+- **SchÃ©ma** : v1.2 (~33 colonnes)
 - **Licence** : CC BY 4.0
 - **Table finale** : `data/processed/training_table.csv` + `data/processed/TRAINING.METADATA.json`
 
-📊 **Statistiques contraste** : mean=8.88%, std=7.20%, range=[2.00%, 30.00%]
+ðŸ“Š **Statistiques contraste** : mean=8.88%, std=7.20%, range=[2.00%, 30.00%]
 
-📄 **Rapports** : `reports/AUDIT.md`, `reports/MISSING_REAL_SYSTEMS.md`, `reports/ATLAS_MERGE_REPORT.md`
+ðŸ“„ **Rapports** : `reports/AUDIT.md`, `reports/MISSING_REAL_SYSTEMS.md`, `reports/ATLAS_MERGE_REPORT.md`
 
 ## Installation
 
 ```bash
-# Cloner le dépôt
+# Cloner le dÃ©pÃ´t
 git clone https://github.com/Mythmaker28/fp-qubit-design.git
 cd fp-qubit-design
 
-# Installer les dépendances (minimal)
+# Installer les dÃ©pendances (minimal)
 pip install -r requirements.txt
 ```
 
-**Dépendances** : numpy, pandas, scikit-learn, matplotlib (Python ≥3.8 recommandé).
+**DÃ©pendances** : numpy, pandas, scikit-learn, matplotlib (Python â‰¥3.8 recommandÃ©).
 
 ## Quickstart
 
-### 1. Entraîner le modèle baseline (Random Forest)
+### 1. EntraÃ®ner le modÃ¨le baseline (Random Forest)
 
 ```bash
 python scripts/train_baseline.py --config configs/example.yaml
@@ -51,15 +51,15 @@ python scripts/train_baseline.py --config configs/example.yaml
 
 **Sortie** : `outputs/metrics.json`, `outputs/model_rf.pkl`
 
-### 2. Générer la shortlist de mutants
+### 2. GÃ©nÃ©rer la shortlist de mutants
 
 ```bash
 python scripts/generate_mutants.py --config configs/example.yaml --output outputs/shortlist.csv
 ```
 
-**Sortie** : `outputs/shortlist.csv` (30 mutants optimisés)
+**Sortie** : `outputs/shortlist.csv` (30 mutants optimisÃ©s)
 
-### 3. Générer les figures
+### 3. GÃ©nÃ©rer les figures
 
 ```bash
 python scripts/generate_figures.py
@@ -69,87 +69,87 @@ python scripts/generate_figures.py
 
 ### 4. Voir la shortlist en ligne
 
-👉 [https://mythmaker28.github.io/fp-qubit-design/](https://mythmaker28.github.io/fp-qubit-design/) (une fois Pages activées)
+ðŸ‘‰ [https://mythmaker28.github.io/fp-qubit-design/](https://mythmaker28.github.io/fp-qubit-design/) (une fois Pages activÃ©es)
 
 ## Arborescence
 
 ```
 fp-qubit-design/
-├─ README.md              # Ce fichier
-├─ README_EN.md           # Version anglaise condensée
-├─ LICENSE                # Apache-2.0
-├─ CITATION.cff           # Fichier de citation (CFF 1.2.0)
-├─ requirements.txt       # Dépendances minimales
-├─ .gitignore             # Python standard
-├─ data/
-│  ├─ raw/                # Placeholder (données brutes futures)
-│  └─ processed/          # atlas_snapshot.csv + METADATA.json
-├─ src/fpqubit/
-│  ├─ __init__.py
-│  ├─ features/featurize.py   # TODOs featurisation
-│  ├─ utils/io.py             # TODOs lecture/écriture CSV
-│  └─ utils/seed.py           # TODOs gestion seed aléatoire
-├─ scripts/
-│  ├─ train_baseline.py       # TODOs entraînement RF/XGB
-│  └─ generate_mutants.py     # TODOs génération mutants
-├─ configs/
-│  ├─ example.yaml            # Config exemple (5-10 clés)
-│  └─ atlas_mapping.yaml      # Mapping proxies Atlas → FP
-├─ figures/                    # Placeholder (plots futurs)
-├─ site/
-│  ├─ index.html              # Page web simple (table shortlist)
-│  └─ shortlist.csv           # Données exemple (3 mutants factices)
-└─ .github/workflows/
-   ├─ ci.yml                  # CI simple (flake8 + import checks)
-   └─ pages.yml               # Déploiement GitHub Pages
+â”œâ”€ README.md              # Ce fichier
+â”œâ”€ README_EN.md           # Version anglaise condensÃ©e
+â”œâ”€ LICENSE                # Apache-2.0
+â”œâ”€ CITATION.cff           # Fichier de citation (CFF 1.2.0)
+â”œâ”€ requirements.txt       # DÃ©pendances minimales
+â”œâ”€ .gitignore             # Python standard
+â”œâ”€ data/
+â”‚  â”œâ”€ raw/                # Placeholder (donnÃ©es brutes futures)
+â”‚  â””â”€ processed/          # atlas_snapshot.csv + METADATA.json
+â”œâ”€ src/fpqubit/
+â”‚  â”œâ”€ __init__.py
+â”‚  â”œâ”€ features/featurize.py   # TODOs featurisation
+â”‚  â”œâ”€ utils/io.py             # TODOs lecture/Ã©criture CSV
+â”‚  â””â”€ utils/seed.py           # TODOs gestion seed alÃ©atoire
+â”œâ”€ scripts/
+â”‚  â”œâ”€ train_baseline.py       # TODOs entraÃ®nement RF/XGB
+â”‚  â””â”€ generate_mutants.py     # TODOs gÃ©nÃ©ration mutants
+â”œâ”€ configs/
+â”‚  â”œâ”€ example.yaml            # Config exemple (5-10 clÃ©s)
+â”‚  â””â”€ atlas_mapping.yaml      # Mapping proxies Atlas â†’ FP
+â”œâ”€ figures/                    # Placeholder (plots futurs)
+â”œâ”€ site/
+â”‚  â”œâ”€ index.html              # Page web simple (table shortlist)
+â”‚  â””â”€ shortlist.csv           # DonnÃ©es exemple (3 mutants factices)
+â””â”€ .github/workflows/
+   â”œâ”€ ci.yml                  # CI simple (flake8 + import checks)
+   â””â”€ pages.yml               # DÃ©ploiement GitHub Pages
 ```
 
-## Résultats (v1.0.0)
+## RÃ©sultats (v1.0.0)
 
 ### Baseline ML
-- **Modèle** : Random Forest (100 estimateurs, profondeur max 10)
-- **Dataset** : 200 échantillons synthétiques basés sur 21 systèmes Atlas
+- **ModÃ¨le** : Random Forest (100 estimateurs, profondeur max 10)
+- **Dataset** : 200 Ã©chantillons synthÃ©tiques basÃ©s sur 21 systÃ¨mes Atlas
 - **Performances** :
   - Test MAE : ~4.6%
-  - Test R² : ~0.17
-  - CV MAE (5-fold) : 4.79 ± 0.42%
-- **Features** : température, méthode (ODMR/ESR/NMR), contexte (in vivo), qualité
+  - Test RÂ² : ~0.17
+  - CV MAE (5-fold) : 4.79 Â± 0.42%
+- **Features** : tempÃ©rature, mÃ©thode (ODMR/ESR/NMR), contexte (in vivo), qualitÃ©
 
 ### Shortlist de mutants
-- **30 mutants** optimisés pour contraste photophysique
-- **Protéines de base** : EGFP, mNeonGreen, TagRFP
-- **Gain prédit** : +2.1% à +12.3% (moyenne : +4.0 ± 2.7%)
-- **Incertitudes** : quantifiées via bootstrap (10 échantillons)
+- **30 mutants** optimisÃ©s pour contraste photophysique
+- **ProtÃ©ines de base** : EGFP, mNeonGreen, TagRFP
+- **Gain prÃ©dit** : +2.1% Ã  +12.3% (moyenne : +4.0 Â± 2.7%)
+- **Incertitudes** : quantifiÃ©es via bootstrap (10 Ã©chantillons)
 
 ### Visualisations
 - Feature importance (Random Forest)
-- Distribution des gains prédits (histogram)
+- Distribution des gains prÃ©dits (histogram)
 
 ## Roadmap futur (v1.1+)
 
 - [ ] Parsing automatique du champ "Photophysique" (lifetime, QY)
-- [ ] Calculs ΔΔG réels (FoldX ou modèle ML)
-- [ ] Structures 3D (alignement séquences sur PDB)
+- [ ] Calculs Î”Î”G rÃ©els (FoldX ou modÃ¨le ML)
+- [ ] Structures 3D (alignement sÃ©quences sur PDB)
 - [ ] GNN prototype (optionnel)
 - [ ] Publication Zenodo avec DOI
-- [ ] Expansion snapshot Atlas (si nouvelles données)
+- [ ] Expansion snapshot Atlas (si nouvelles donnÃ©es)
 
 ## Licence et citation
 
 - **Code** : Apache-2.0 (voir `LICENSE`)
-- **Données Atlas** : CC BY 4.0 (voir Atlas repo)
+- **DonnÃ©es Atlas** : CC BY 4.0 (voir Atlas repo)
 
-Si vous utilisez ce dépôt, veuillez citer :
+Si vous utilisez ce dÃ©pÃ´t, veuillez citer :
 
 ```
 Lepesteur, T. (2025). FP-Qubit Design (v0.1.0). GitHub. https://github.com/Mythmaker28/fp-qubit-design
 ```
 
-Voir `CITATION.cff` pour le format structuré.
+Voir `CITATION.cff` pour le format structurÃ©.
 
 ## Contribution
 
-Ce projet est ouvert aux contributions. Actuellement en phase de développement actif. Les issues tracent les tâches prioritaires.
+Ce projet est ouvert aux contributions. Actuellement en phase de dÃ©veloppement actif. Les issues tracent les tÃ¢ches prioritaires.
 
 ## Contact
 
@@ -159,5 +159,6 @@ Ce projet est ouvert aux contributions. Actuellement en phase de développement 
 
 ---
 
-**Statut** : ✅ v1.0.0 Release publique — Pleinement fonctionnel
+**Statut** : âœ… v1.0.0 Release publique â€” Pleinement fonctionnel
+
 
