@@ -1,0 +1,29 @@
+{
+  "version": "v2.2.2",
+  "dataset": {
+    "atlas": "biological-qubits-atlas",
+    "commit": "<FILL_ATLAS_COMMIT_SHA>",
+    "useful_systems": 221,
+    "families": 30,
+    "calcium_share_percent": 22.6
+  },
+  "modeling": {
+    "decision": "NO-GO",
+    "criteria": {
+      "r2_min": 0.20,
+      "mae_max": 7.81
+    },
+  	"evidence": {
+      "r2": -0.18031132289321805,
+      "mae": 8.490189850602476,
+      "delta_mae_percent": 24.22962264089023,
+      "coverage_90": 0.9004524886877828,
+      "ece_abs_error": 0.0004524886877828038,
+      "source": "/deliverables/lab_v2_2_2/cv_metrics.json"
+    }
+  },
+  "lab_handoff": {
+    "zip_ready": true,
+    "path": "deliverables/lab_v2_2_2/"
+  }
+}
