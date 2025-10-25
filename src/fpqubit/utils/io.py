@@ -44,3 +44,5 @@ def write_csv(df: pd.DataFrame, filepath: str) -> None:
     # Placeholder
     df.to_csv(filepath, index=False)
 
+
+

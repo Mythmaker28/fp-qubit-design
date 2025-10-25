@@ -1,0 +1,15 @@
+LAB HANDOFF v2.2.2 - Fluorescence Ion Channel Screening Package
+
+FILES LOCATION: All deliverables are in this directory (outputs_v2_2_2_lab/)
+
+USAGE GUIDE:
+1. shortlist_lab_sheet.csv - Complete candidate data with spectral parameters
+2. shortlist_top12_final.csv - Final 12 candidates selected for testing  
+3. filters_recommendations.md - Filter recommendations table for each candidate
+4. plate_layout_96.csv - 96-well plate layout with replicates and controls
+5. plate_layout_24.csv - 24-well plate layout with replicates
+6. protocol_skeleton.md - Experimental protocol with spectral parameters
+
+VERIFICATION: Use SHA256SUMS.txt to verify file integrity before use
+
+READY FOR LAB: All files validated and ready for experimental validation

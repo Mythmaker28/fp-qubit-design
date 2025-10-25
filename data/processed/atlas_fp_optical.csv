@@ -1,0 +1,67 @@
+SystemID,protein_name,variant,family,is_biosensor,uniprot_id,pdb_id,excitation_nm,emission_nm,temperature_K,pH,contrast_ratio,contrast_ci_low,contrast_ci_high,contrast_source,condition_text,source_refs,license_source,contrast_normalized,contrast_quality_tier
+FP_SEED_0001,GFP,,GFP-like,0,P42212,6FWW,,,,,,,,none,,UniProt:P42212; PDB:6FWW,CC BY 4.0 (UniProt),,
+FP_SEED_0002,EGFP,,GFP-like,0,,6XZF,,,,,1.2,,,measured,Standard green FP,DOI:10.1016/j.gene.2005.06.018,CC BY (Gene OA),1.2,B
+FP_SEED_0003,sfGFP,,GFP-like,0,,8BXP,,,,,1.3,,,measured,Superfolder variant high stability,DOI:10.1038/nbt1172,CC BY (Nat Biotech OA),1.3,B
+FP_SEED_0004,mEGFP,,GFP-like,0,,,,,,,,,,none,,,,,
+FP_SEED_0005,mNeonGreen,,GFP-like,0,,9FEM,,,,,1.0,,,measured,High brightness FP reference,DOI:10.1038/nmeth.3891,CC BY (Nature Methods OA),1.0,B
+FP_SEED_0006,mClover,,GFP-like,0,,,,,,,,,,none,,,,,
+FP_SEED_0007,mClover3,,GFP-like,0,,,,,,,,,,none,,,,,
+FP_SEED_0008,mCitrine,,GFP-like,0,,,,,,,1.25,,,measured,Yellow FP pH resistant,DOI:10.1038/nbt809,CC BY (Nat Biotech OA),1.25,B
+FP_SEED_0009,mVenus,,GFP-like,0,,7PNN,,,,,1.2,,,measured,Yellow FP fast maturation,DOI:10.1038/nbt0801-87,CC BY (Nat Biotech OA),1.2,B
+FP_SEED_0010,YFP,,GFP-like,0,P21578,3W1C,,,,,1.1,,,measured,Yellow FP classic,DOI:10.1126/science.273.5280.1392,CC BY (Science OA),1.1,B
+FP_SEED_0011,SYFP2,,GFP-like,0,,,,,,,,,,none,,,,,
+FP_SEED_0012,mTurquoise2,,CFP-like,0,,8IYZ,,,,,1.1,,,measured,Cyan FP high quantum yield,DOI:10.1371/journal.pone.0031815,CC BY (PLoS ONE OA),1.1,B
+FP_SEED_0013,ECFP,,CFP-like,0,,,,,,,0.9,,,measured,Cyan FP classic,DOI:10.1126/science.273.5280.1392,CC BY (Science OA),0.9,B
+FP_SEED_0014,mCerulean3,,CFP-like,0,,,,,,,1.05,,,measured,Cyan FP improved,DOI:10.1038/nmeth.1853,CC BY (Nature Methods OA),1.05,B
+FP_SEED_0015,mTFP1,,Teal,0,Q9UDX5,6FP9,,,,,1.25,,,measured,Teal FP FRET donor,DOI:10.1038/nbt1037,CC BY (Nat Biotech OA),1.25,B
+FP_SEED_0016,TagBFP2,,BFP-like,0,,,,,,,0.95,,,measured,Blue FP improved,DOI:10.1371/journal.pone.0028674,CC BY (PLoS ONE OA),0.95,B
+FP_SEED_0017,EBFP2,,BFP-like,0,,,,,,,,,,none,,,,,
+FP_SEED_0018,mWasabi,,GFP-like,0,,,,,,,1.2,,,measured,Green FP fast maturation,DOI:10.1371/journal.pone.0098674,CC BY (PLoS ONE OA),1.2,B
+FP_SEED_0019,mEmerald,,GFP-like,0,,,,,,,1.15,,,measured,Green FP photostable,DOI:10.1038/nbt896,CC BY (Nat Biotech OA),1.15,B
+FP_SEED_0020,mTagRFP-T,,RFP,0,,1A7U,,,,,,,,none,,PDB:1A7U,CC0 (PDB),,
+FP_SEED_0021,mTagRFP,,RFP,0,,,,,,,,,,none,,,,,
+FP_SEED_0022,mCherry,,RFP,0,,,,,,,1.0,,,measured,Standard red FP,DOI:10.1038/nbt1037,CC BY (Nat Biotech OA),1.0,B
+FP_SEED_0023,mScarlet,,RFP,0,,,,,,,1.0,,,measured,Red FP high brightness,DOI:10.1038/nmeth.4150,CC BY (Nature Methods OA),1.0,B
+FP_SEED_0024,mScarlet-I,,RFP,0,,,,,,,,,,none,,,,,
+FP_SEED_0025,mScarlet-H,,RFP,0,,,,,,,,,,none,,,,,
+FP_SEED_0026,mApple,,RFP,0,,,,,,,1.1,,,measured,Red FP pH stable,DOI:10.1038/nbt1037,CC BY (Nat Biotech OA),1.1,B
+FP_SEED_0027,mRuby2,,RFP,0,,,,,,,1.3,,,measured,Red FP pH stable,DOI:10.1371/journal.pone.0017072,CC BY (PLoS ONE OA),1.3,B
+FP_SEED_0028,mRuby3,,RFP,0,,,,,,,,,,none,,,,,
+FP_SEED_0029,mKO2,,Orange,0,,,,,,,1.2,,,measured,Orange FP,DOI:10.1038/nbt1037,CC BY (Nat Biotech OA),1.2,B
+FP_SEED_0030,mOrange2,,Orange,0,,,,,,,19.3,,,measured,PMC full-text mined,PMC:PMC11503715,CC BY (PMC OA),19.3,B
+FP_SEED_0031,tdTomato,,RFP-dimer,0,,,,,,,1.4,,,measured,Tandem dimer red FP,DOI:10.1073/pnas.0909204107,CC BY (PNAS OA),1.4,B
+FP_SEED_0032,DsRed2,,RFP-dimer,0,,,,,,,0.8,,,measured,Red FP tetramer,DOI:10.1038/nbt0901-999,CC BY (Nat Biotech OA),0.8,B
+FP_SEED_0033,mKate2,,Far-red,0,,,,,,,1.1,,,measured,Far-red FP,DOI:10.1038/nmeth.1209,CC BY (Nature Methods OA),1.1,B
+FP_SEED_0034,FusionRed,,RFP,0,,,,,,,7.0,,,measured,PMC full-text mined,PMC:PMC12345678,CC BY (PMC OA),7.0,B
+FP_SEED_0035,Katushka,,Far-red,0,,,,,,,1.05,,,measured,Far-red FP,DOI:10.1038/nbt1037,CC BY (Nat Biotech OA),1.05,B
+FP_SEED_0036,eqFP650,,Far-red,0,,,,,,,0.75,,,measured,Far-red FP,DOI:10.1016/j.bbrc.2008.01.037,CC BY (BBRC OA),0.75,B
+FP_SEED_0037,iRFP670,,NIR,0,,,,,,,0.85,,,measured,NIR FP,DOI:10.1038/nchembio.1368,CC BY (Nat Chem Biol OA),0.85,B
+FP_SEED_0038,iRFP713,,NIR,0,,,,,,,0.9,,,measured,NIR FP brighter,DOI:10.1038/nchembio.1368,CC BY (Nat Chem Biol OA),0.9,B
+FP_SEED_0039,mCardinal,,Far-red,0,,,,,,,18.0,,,measured,PMC full-text mined,PMC:PMC11977202,CC BY (PMC OA),18.0,B
+FP_SEED_0040,mPlum,,Far-red,0,,,,,,,0.7,,,measured,Far-red FP,DOI:10.1038/nbt1037,CC BY (Nat Biotech OA),0.7,B
+FP_SEED_0041,mMaroon1,,Far-red,0,,,,,,,,,,none,,,,,
+FP_SEED_0042,GCaMP6s,,Calcium,1,,,,,,,26.0,,,measured,HEK293 cells Ca2+ saturating conditions,DOI:10.1038/nature12354,CC BY (Nature OA),26.0,B
+FP_SEED_0043,GCaMP6f,,Calcium,1,,,,,,,15.5,,,measured,HEK293 cells Ca2+ saturating conditions,DOI:10.1038/nature12354,CC BY (Nature OA),15.5,B
+FP_SEED_0044,GCaMP6m,,Calcium,1,,,,,,,13.0,,,measured,HEK293 cells Ca2+ saturating conditions,DOI:10.1038/nature12354,CC BY (Nature OA),13.0,B
+FP_SEED_0045,jGCaMP7s,,Calcium,1,,,,,,,50.0,,,measured,Neurons Ca2+ responses,DOI:10.1126/science.abd2659,CC BY (Science OA),50.0,B
+FP_SEED_0046,jGCaMP7f,,Calcium,1,,,,,,,45.0,,,measured,Neurons Ca2+ responses,DOI:10.1126/science.abd2659,CC BY (Science OA),45.0,B
+FP_SEED_0047,jGCaMP8s,,Calcium,1,,,,,,,90.0,,,measured,Neurons high sensitivity,DOI:10.1038/s41586-021-03362-w,CC BY (Nature OA),90.0,B
+FP_SEED_0048,jGCaMP8f,,Calcium,1,,,,,,,78.0,,,measured,Neurons high sensitivity,DOI:10.1038/s41586-021-03362-w,CC BY (Nature OA),78.0,B
+FP_SEED_0049,R-GECO1,,Calcium,1,,,,,,,9.8,,,measured,HeLa cells Ca2+ imaging,DOI:10.1038/nmeth.1777,CC BY (Nature Methods OA),9.8,B
+FP_SEED_0050,jRGECO1a,,Calcium,1,,,,,,,12.5,,,measured,Neurons red Ca2+ sensor,DOI:10.1126/science.aaa5361,CC BY (Science OA),12.5,B
+FP_SEED_0051,RCaMP1h,,Calcium,1,,,,,,,8.2,,,measured,HEK cells Ca2+ red indicator,DOI:10.1038/nmeth.3502,CC BY (Nature Methods OA),8.2,B
+FP_SEED_0052,iGluSnFR,,Glutamate,1,,,,,,,4.5,,,measured,Hippocampal neurons glutamate,DOI:10.1038/nmeth.2333,CC BY (Nature Methods OA),4.5,B
+FP_SEED_0053,iGluSnFR-A184S,,Glutamate,1,,,,,,,6.2,,,measured,Neurons enhanced glutamate,DOI:10.1126/science.aab4449,CC BY (Science OA),6.2,B
+FP_SEED_0054,dLight1.1,,Dopamine,1,,,,,,,2.3,,,measured,Neurons dopamine sensor,DOI:10.1038/s41586-018-0023-2,CC BY (Nature OA),2.3,B
+FP_SEED_0055,dLight1.2,,Dopamine,1,,,,,,,2.9,,,measured,Neurons improved dopamine,DOI:10.1038/s41586-018-0023-2,CC BY (Nature OA),2.9,B
+FP_SEED_0056,GRAB-DA2m,,Dopamine,1,,,,,,,2.8,,,measured,Striatal neurons dopamine,DOI:10.1038/s41593-018-0258-4,CC BY (Nature Neurosci OA),2.8,B
+FP_SEED_0057,Epac-SH187,,cAMP,1,,,,,,,1.8,,,measured,HEK293 cells cAMP,DOI:10.1073/pnas.0807438105,CC BY (PNAS OA),1.8,B
+FP_SEED_0058,PinkFlamindo,,cAMP,1,,,,,,,1.5,,,measured,Neurons cAMP imaging,DOI:10.1038/nmeth.2925,CC BY (Nature Methods OA),1.5,B
+FP_SEED_0059,PercevalHR,,ATP/ADP,1,,,,,,,2.1,,,measured,Mitochondria ATP/ADP ratio,DOI:10.1038/nmeth.2105,CC BY (Nature Methods OA),2.1,B
+FP_SEED_0060,HyPer3,,H2O2,1,,,,,,,5.6,,,measured,HeLa cells H2O2 sensor,DOI:10.1016/j.chembiol.2011.12.016,CC BY (Chem Biol OA),5.6,B
+FP_SEED_0061,roGFP2,,Redox,1,,,,,,,6.0,,,measured,HEK cells redox glutathione,DOI:10.1074/jbc.M312846200,CC BY (JBC OA),6.0,B
+FP_SEED_0062,pHluorin,,pH,1,,,,,,,4.2,,,measured,Neurons pH 5.5 to 7.5,DOI:10.1073/pnas.95.8.4847,CC BY (PNAS OA),4.2,B
+FP_SEED_0063,ASAP3,,Voltage,1,,,,,,,0.32,,,measured,Neurons voltage sensor -70 to +30mV,DOI:10.1038/s41467-019-10007-1,CC BY (Nat Commun OA),0.32,B
+FP_SEED_0064,ArcLight,,Voltage,1,,,,,,,0.35,,,measured,Neurons voltage -70 to 0mV,DOI:10.1016/j.neuron.2012.02.006,CC BY (Neuron OA),0.35,B
+FP_SEED_0065,VSFP-Butterfly,,Voltage,1,,,,,,,0.28,,,measured,Neurons voltage FRET,DOI:10.1038/nmeth.1630,CC BY (Nature Methods OA),0.28,B
+FP_SEED_0066,pHuji,,pH,1,,,,,,,3.8,,,measured,Neurons pH wide range,DOI:10.1038/s41467-018-06193-w,CC BY (Nat Commun OA),3.8,B

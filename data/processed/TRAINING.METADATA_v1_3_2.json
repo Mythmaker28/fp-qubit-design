@@ -1,0 +1,80 @@
+{
+  "version": "v1.3.2",
+  "description": "Training table for v1.3.2 with Atlas v2.2 data (189 systems)",
+  "n_total": 178,
+  "n_families": 30,
+  "target_variable": "contrast_normalized",
+  "target_transformation": "log1p",
+  "features": {
+    "numerical": [
+      "excitation_nm",
+      "emission_nm",
+      "stokes_shift_nm",
+      "temperature_K",
+      "pH"
+    ],
+    "categorical": [
+      "family",
+      "spectral_region",
+      "context_type",
+      "is_biosensor"
+    ],
+    "flags": [
+      "excitation_missing",
+      "emission_missing",
+      "contrast_missing"
+    ]
+  },
+  "family_distribution": {
+    "Calcium": 37,
+    "Voltage": 20,
+    "Dopamine": 13,
+    "GFP-like": 11,
+    "RFP": 11,
+    "pH": 10,
+    "Glutamate": 9,
+    "Far-red": 7,
+    "CFP-like": 7,
+    "NIR": 6,
+    "H2O2": 5,
+    "cAMP": 5,
+    "GABA": 4,
+    "YFP": 4,
+    "NADH/NAD+": 3,
+    "BFP-like": 3,
+    "Acetylcholine": 3,
+    "ATP": 3,
+    "ATP/ADP": 2,
+    "Redox": 2,
+    "cGMP": 2,
+    "Norepinephrine": 2,
+    "Zinc": 2,
+    "Serotonin": 1,
+    "Histamine": 1,
+    "Opioid": 1,
+    "NADPH/NADP+": 1,
+    "Oxygen": 1,
+    "Teal": 1,
+    "Orange": 1
+  },
+  "context_distribution": {
+    "in_cellulo": 99,
+    "in_vivo": 79
+  },
+  "spectral_distribution": {
+    "cyan": 79,
+    "yellow": 28,
+    "blue": 28,
+    "unknown": 19,
+    "green": 17,
+    "orange": 5,
+    "red": 2
+  },
+  "target_stats": {
+    "mean": 9.093370786516854,
+    "std": 14.813544035060948,
+    "min": 0.75,
+    "max": 90.0,
+    "median": 3.5
+  }
+}

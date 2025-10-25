@@ -1,0 +1,109 @@
+{
+  "version": "v1.3.1 (fallback v1.2.5)",
+  "date": "2025-10-25 00:27:01",
+  "n_samples": 97,
+  "n_features": 36,
+  "n_folds": 5,
+  "seed": 1337,
+  "target_transform": "log1p(contrast_normalized)",
+  "relaxed_criteria": {
+    "r2_min": 0.1,
+    "mae_max": 7.81,
+    "ece_max": 0.18,
+    "coverage_min": 0.85,
+    "coverage_max": 0.95,
+    "beat_baseline_pct": 0.05
+  },
+  "baseline_metrics": {
+    "mean_mae": 0.8480309692054134,
+    "mean_r2": -0.3447749378482916,
+    "median_mae": 0.8363950164293805,
+    "median_r2": -0.45276663813178786
+  },
+  "gbdt_central": {
+    "overall": {
+      "mae": 0.5725910648429353,
+      "rmse": 0.7013264401863765,
+      "r2": -0.8938060195069214,
+      "mae_std": 0.47669451416865244,
+      "r2_std": 1.8484632385195978
+    },
+    "fold_details": [
+      {
+        "fold": 1,
+        "n_train": 77,
+        "n_test": 20,
+        "mae": 1.4300069921708698,
+        "rmse": 1.6524223850073048,
+        "r2": -2.952318337251902
+      },
+      {
+        "fold": 2,
+        "n_train": 77,
+        "n_test": 20,
+        "mae": 0.22577300147158338,
+        "rmse": 0.2909702965949762,
+        "r2": 0.7298282164838806
+      },
+      {
+        "fold": 3,
+        "n_train": 78,
+        "n_test": 19,
+        "mae": 0.7586796593420518,
+        "rmse": 0.8636402291021308,
+        "r2": -3.343227698330695
+      },
+      {
+        "fold": 4,
+        "n_train": 78,
+        "n_test": 19,
+        "mae": 0.26565122904927274,
+        "rmse": 0.40271431387770007,
+        "r2": 0.3884040110327517
+      },
+      {
+        "fold": 5,
+        "n_train": 78,
+        "n_test": 19,
+        "mae": 0.18284444218089885,
+        "rmse": 0.2968849763497702,
+        "r2": 0.7082837105313582
+      }
+    ]
+  },
+  "cqr_calibration": {
+    "coverage": 0.9175257731958762,
+    "ece": 0.10206185567010306
+  },
+  "acceptance_criteria": {
+    "r2": {
+      "value": -0.8938060195069214,
+      "target": 0.1,
+      "pass": false
+    },
+    "mae": {
+      "value": 0.5725910648429353,
+      "target": 7.81,
+      "pass": true
+    },
+    "ece": {
+      "value": 0.10206185567010306,
+      "target": 0.18,
+      "pass": true
+    },
+    "coverage": {
+      "value": 0.9175257731958762,
+      "target": [
+        0.85,
+        0.95
+      ],
+      "pass": true
+    },
+    "beat_baseline": {
+      "value": 0.31540593428287006,
+      "target": 0.05,
+      "pass": true
+    }
+  },
+  "decision": "NO_GO"
+}
