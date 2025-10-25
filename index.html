@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fp-qubit-design — Atlas v2.2.2</title>
+<style>body{font:16px/1.5 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:2rem;max-width:880px}.k{display:inline-block;padding:.2rem .45rem;border-radius:.35rem;background:#eee}code{background:#f6f8fa;padding:.1rem .3rem;border-radius:.25rem}.muted{opacity:.7}</style>
+<h1>fp-qubit-design</h1>
+<p class="muted">Documentation-only; modeling release is <b>NO-GO</b>. Pages is branch-based (master).</p>
+<div id="counts"><span class="k">Loading status…</span></div>
+<p>Repo: <a href="https://github.com/Mythmaker28/fp-qubit-design">GitHub</a> · <a href="https://github.com/Mythmaker28/fp-qubit-design/tree/master/deliverables/lab_v2_2_2">Lab package</a></p>
+<script>
+(async function(){
+  const el=document.getElementById('counts');
+  async function fetchJSON(p){
+    try{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);return await r.json()}catch(e){return null}}
+  const s=await fetchJSON('deliverables/lab_v2_2_2/status.json');
+  if(s&&s.atlas_version&&s.n_useful&&s.families&&s.calcium_share_pct!==undefined){
+    el.innerHTML=`<b>Atlas ${s.atlas_version}</b> · Useful systems: <b>${s.n_useful}</b> · Families: <b>${s.families}</b> · Ca²⁺ share: <b>${s.calcium_share_pct}%</b>`;
+  }else{
+    el.innerHTML=`<b>Atlas v2.2.2</b> · Useful systems: <b>221</b> · Families: <b>30</b> · Ca²⁺ share: <b>22.6%</b> <span class="muted">(fallback)</span>`;
+  }
+})();
+</script>
