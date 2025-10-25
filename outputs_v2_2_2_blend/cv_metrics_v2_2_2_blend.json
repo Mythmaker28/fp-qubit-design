@@ -1,0 +1,12 @@
+{
+  "model": "RF+family_median_blend",
+  "alpha": 0.8,
+  "r2": -0.1734392166256653,
+  "mae": 8.58941028132207,
+  "baseline_mae_mean": 11.20515714256465,
+  "baseline_mae_median": 8.64099547511312,
+  "delta_mae_percent_vs_mean": 23.344133669542487,
+  "delta_mae_percent_vs_median": 0.5969820715636329,
+  "coverage_90_percent": 90.04524886877829,
+  "ece_abs_error": 0.0004524886877828038
+}

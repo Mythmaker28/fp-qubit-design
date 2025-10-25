@@ -1,0 +1,21 @@
+canonical_name,family,y_pred,PI90_width,fold,excitation_nm,emission_nm,stokes_shift_nm,rec_excitation_filter,rec_emission_filter,method,context_type,doi,provenance
+NADPH/NADP+_205,NADPH/NADP+,4.820609318354852,36.56776114241987,5,420.0,516.0,96.0,"[400, 440]","[496, 536]",fluorescence,in_cellulo,NA,Atlas
+Calcium_33,Calcium,4.56419532905106,2.521235990817694,1,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_vivo(neurons),NA,Atlas
+cAMP_104,cAMP,4.495047446620862,16.000000000000014,3,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_cellulo(HEK293),NA,Atlas
+ATP_133,ATP,4.495047446620862,16.000000000000014,3,488.0,515.0,27.0,"[468, 508]","[495, 535]",fluorescence,in_cellulo,NA,Atlas
+Calcium_14,Calcium,4.4723369415247936,2.521235990817695,1,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_vivo(neurons),NA,Atlas
+Calcium_20,Calcium,4.4723369415247936,2.521235990817695,1,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_vivo(neurons),NA,Atlas
+Calcium_48,Calcium,4.4723369415247936,2.521235990817695,1,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_vivo(neurons),NA,Atlas
+NADH/NAD+_78,NADH/NAD+,4.471744048306857,31.09024682724511,2,420.0,535.0,115.0,"[400, 440]","[515, 555]",fluorescence,in_cellulo,NA,Atlas
+Calcium_32,Calcium,4.460210762709108,2.521235990817694,1,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_vivo(neurons),NA,Atlas
+Redox_121,Redox,4.442828645159977,16.000000000000014,3,405.0,516.0,111.0,"[385, 425]","[496, 536]",fluorescence,in_cellulo,NA,Atlas
+Redox_135,Redox,4.442828645159977,16.000000000000014,3,405.0,516.0,111.0,"[385, 425]","[496, 536]",fluorescence,in_cellulo,NA,Atlas
+Calcium_26,Calcium,4.352093508544347,2.521235990817695,1,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_vivo(neurons),NA,Atlas
+ATP_114,ATP,4.216047696451403,16.000000000000014,3,488.0,515.0,27.0,"[468, 508]","[495, 535]",fluorescence,in_cellulo,NA,Atlas
+Orange_123,Orange,4.188639874476948,16.000000000000014,3,406.0,526.0,120.0,"[386, 426]","[506, 546]",fluorescence,in_cellulo,NA,Atlas
+GABA_111,GABA,4.168861380937801,16.000000000000014,3,488.0,515.0,27.0,"[468, 508]","[495, 535]",fluorescence,in_vivo(neurons),NA,Atlas
+GABA_117,GABA,4.168861380937801,16.000000000000014,3,488.0,515.0,27.0,"[468, 508]","[495, 535]",fluorescence,in_vivo(neurons),NA,Atlas
+H2O2_163,H2O2,4.094091621224716,42.58351870846599,4,420.0,516.0,96.0,"[400, 440]","[496, 536]",fluorescence,in_cellulo,NA,Atlas
+pH_177,pH,4.094091621224716,42.58351870846599,4,395.0,509.0,114.0,"[375, 415]","[489, 529]",fluorescence,in_cellulo,NA,Atlas
+H2O2_178,H2O2,4.094091621224716,42.58351870846599,4,420.0,516.0,96.0,"[400, 440]","[496, 536]",fluorescence,in_cellulo,NA,Atlas
+cAMP_94,cAMP,4.059115422249998,16.000000000000014,3,488.0,510.0,22.0,"[468, 508]","[490, 530]",fluorescence,in_cellulo(HEK293),NA,Atlas
